@@ -4,6 +4,9 @@ A probabilistic cashflow forecaster for seasonal farm operations.
 Built for irregular cash flows:
 **what's the probability I run out of cash before my next big revenue event, and how large a credit line bridges the gap?**
 
+<img width="1205" height="660" alt="image" src="https://github.com/user-attachments/assets/7c4dd239-f895-4829-8de3-1082e784efa4" />
+
+
 ## What it does
 
 **The model** A pasture-raised egg farm hits a spring grow-out cash valley, before holiday-season egg prices lift cash into the fall. The engine decomposes a sample 5-year ledger (~9,000 transactions, 50k hens) into recurring obligations, seasonal flows, and payment timing, then runs 5,000 Monte Carlo paths to produce P(shortfall), the trough date, and a 95th-percentile credit line.
