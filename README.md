@@ -10,6 +10,14 @@ A probabilistic cashflow forecaster for seasonal farm operations, built as an Am
 
 The engine (`src/engine/*`) is pure TypeScript — no React, no DOM — fully unit-tested. Seed data is synthetic but parameterized from public USDA/extension benchmarks (see `src/data/seed.ts`).
 
+## Top features
+
+**Correlated risk** A shared "year-quality" factor moves feed, utilities, and labor together, so a bad year hits everything at once. The projection bands show real risk instead of noise that cancels out.
+
+**Credit line modeled day by day** Drawdowns, repayments, and interest are simulated daily — so "this line covers 95% of scenarios" is an actual number, not a guess.
+
+**Fast and reproducible** Fixed costs get computed once; only the genuinely uncertain stuff gets simulated. Every one of the 5,000 paths is seeded, so runs are fully reproducible.
+
 ## Quickstart
 
 ```bash
